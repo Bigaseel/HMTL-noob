@@ -1,0 +1,19 @@
+body {
+    background: rgb(224, 218, 129);
+}
+/*Etiquetas h1 con diferente estilo*/
+.titulo {
+    color: rgb(162, 0, 255);
+    text-align:center
+}
+.titulo{
+    color:royalblue;
+    border: 6px solid rgba(151, 69, 158, 0.281);
+    
+}
+.atributos {
+    color: rgba(255, 0, 76, 0.829); 
+}
+.atributosminis {
+    color: darkgreen;
+}
