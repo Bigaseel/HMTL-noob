@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+    <link rel="stylesheet" href="Estilos.css" />
+    <meta charset="utf-8"> <!-- CODIFICACON -->
+    <meta name="viewport" content="width=device-width"> <!-- Sirve para que se adapte el contenido a celulares y a cualquier dispositivo -->
+    <title>Portafolio Bigaseel</title> <!-- Titulo de la Pagina -->
+    <meta name="description" content="Practica de HTML donde voy explicando lo que voy enteniendo para asi poder crear una pagina web"> <!-- Descripcion que aparece cuando alguien busca tu pagina -->
+    <meta name="theme-color" content="#09f"> <!-- Color del encabezado de la pagina web  -->
+    <link rel="icon" type="image/png" href="imagenes/263100.png"> <!-- Sirve para poner icono en la pagina web -->
+    <!-- OPEN GRAPH-->
+    <meta property="og:tltle" content="Portafolio de un novato en programacion"> <!-- Sirve para el titulo cuando es tipo publicidad -->
+    <meta property="og:description" content="Practica de HTML donde voy explicando lo que voy enteniendo para asi poder crear una pagina web">
+    <meta property="og:image" content="imagenes/263100.png">
+    <link rel="alternate" href="https://Biga.seel/en" hreflang="es-MX"> <!-- Tener pagina en diferentes idiomas y que google no lo tome como duplicado -->
+    <link rel="canonical" href="https://Biga.seel">  <!-- www.Biga.seel o Biga.seel sean la misma -->
+
+  
+
+ </head>
+<body>
+
+
+ <header>
+  <h1 class="titulo">Portafolio De Esau</h1>
+  <nav>
+    <a href="#etiqueta h1">Etiqueta h1</a>
+    <a href="https://www.youtube.com/@Decodete/featured" target="_blank" rel="noreferrer">Youtube</a>  <!--El noreferrer sirve para no dar demasiada informacion a la pagina a la que nos va a enviar-->
+    <!--El target="_blank" sirve para enviarnos a otra pagina sin que salgas de la tuya-->
+    <a href="#p">Etiqueta P</a>
+    <a href="#strong">Strong</a>
+    <a href="#ulli">Ul y li</a>
+
+
+  </nav>
+
+
+ </header>
+ <main>
+  <p><strong>Bienvenidos a mi practica de HTML.</strong>> Donde iremos paso a paso aprendiendo a como crear paginas web. </p>
+   
+     <h1>Tema 1</h1>
+     <ul>
+        <li>Etiquetas y elementos</li>
+        <ul>
+            <li>Etiquetas </li>
+            <ul>
+                <li  class="item-list">h1</li>
+                <li  class="item-list">p</li>
+                <li  class="item-list">strong</li>
+                <li  class="item-list">ul y li </li>
+            </ul>
+        </ul>
+     </ul>
+     <p>Imagen explicativa de como localizar elementos y etiquetas </p>
+     <img 
+     width="600"
+     height="300"
+     title="Foto de elementos" 
+     alt="Una imagen explicando que es un elemento, como identificar una etiqueta y como debe ser su sintaxis" src="/imagenes/Elemento-HTML_cr.png">
+  <section>
+     <h2>Declaracion !DOCTYPE </h2>
+     <p>Representa el tipo de documentos y ayuda a los navegadores a mostrar la pagina web correctamente.
+      Declaracion que informa al usuario que vesion estamos usando </p>
+  </section>
+  <section>
+    <h2>Encabezados HTML</h2>
+    <p>Los encabezados van desde <strong>h1</strong> hasta <strong>h6</strong>,donde h1 es el titulo mas importante </p>
+  </section>
+  <section>
+     <h2 id="etiqueta h1"><strong>Etiqueta h1 </strong></h2>
+     <p>La importancia de la etiqueta <strong>h1</strong> ya que es una etiqueta de Titulo Principal y se debe poner siempre al pricipio seguido de un elemento</p>
+     <ul>
+       <li> Como hacer el titulo mas grande?</li>
+       <p>Cada encabezado h tiene un tamaño predeterminado pero puedes especificar el tamaño de cualquier encabezado con el Style usando <strong>font-size</strong> </p>
+       <p><h1 style="font-size:20px">Hola Mundo</h1></p>
+       <!--   <h1 style="font-size:60px">Hola Mundo</h1>   Elemento  -->
+     </ul>
+  </section>
+  <section>
+     <h2 class="atributos"> Atributos </h2>
+     <p>Proporcionan informacion adicional sobre los elementos HTML</p>
+     <ul>
+       <li><h3 class="atributosminis">Atributos href</h3> </li>
+       <p>Especifica la URL de la pagina a la que va el enlace </p>
+       <li><h3 class="atributosminis">Atributo a</h3></li>
+       <p>Define un hipervinculo</p> <!--  <a href="www.facebook.com"> Facebook </a>  -->
+       <li><h3 class="atributosminis">Atributo src</h3></li>
+       <p>Especifica la ruta a la imagen que se mostrara</p>
+       <img loading="lazy" src="imagenes/images.jpg"> <!--  <img src="imagenes/images.jpg"> -->
+       <li><h3 class="atributosminis">Atributos ancho y largo</h3></li>
+       <p>La etiqueta img debe contener los atributos width y height que especifican ancho y largo de la imagen </p>
+       <img loading="lazy" src="imagenes/images.jpg" width="100" height="100">
+       <li><h3 class="atributosminis">Atributo Alt</h3></li>
+       <p>Especifica un texto alternativo para una imagen si por algun moivo la imagen no se puede mostrar </p>
+       <img loading="lazy" alt="Imagen de un atardecer en la playa" src="imagenes/8ce078d4605d36f071f25d32d408000b.jpg" width="180" height="200" >
+       <p>*alt (Imagen de un atardecer en la playa)</p>
+       <li><h3 class="atributosminis">Atributo de Idioma</h3></li>
+       <p>Siempre deb incluir el "lang" dentro de la etiqueta html para declarar el idioma de la pagina web</p>
+       <!--<html lang="en-Us"-->
+       <li><h3 class="atributosminis">Atributo Title</h3></li>
+      <p>Define informacion adicional sobre un elemento</p>
+      <p title="Im a tooltip">This is a paragraph</p>
+
+    </ul>
+  </section>
+  <section>
+    <h2>Elementos anidados</h2>
+    <p>Son elementos que estan dentro de otros elementos como por ejemplo el <strong>Body</strong> que esta anidado en el elemento <strong>HTML</strong> </p>
+  </section>
+  <section>  
+    <h2>Etiqueta Body</h2>
+    <p>Define el cuerpo del documento</p>
+  </section>
+  <section>
+    <h2>Etiqueta Head </h2>
+    <p>Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.</p>
+  </section>
+  <section>
+    <h2 id="p">Etiqueta P <small>(parrafo)</small></h2>
+    <p>Ayuda para organizar parrafos dentro de un texto haciendolo ver mas ordenado</p>
+  </section>
+  <section>
+    <h2 id="strong">Etiqueta Strong</h2>
+    <p>El elemento <strong>strong</strong> es el apropiado para marcar con especial 
+       énfasis las partes más importantes de un texto.</p>
+  </section>
+  <section>
+    <h2 id="ulli">Etiqueta ul y li</h2>
+    <p>ul de "lista desordenada", crea una lista no ordenada.</p>
+    <p>li declara cada uno de los elementos de una lista.</p>
+    <p><strong>Ejemplo(li)</strong></p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </section>
+  
+  <section>
+   
+    <h2>Etiqueta img</h2>
+    <p>Con esta etiqueta puedes colocar cualquier imagen y editar su ancho y largo para tener mejor presentacion
+      con los atributos "<strong>width y height</strong>""
+    </p>
+
+    <ul>
+      <p><img loading="lazy"
+      width="160"
+      height="200"
+      title="Porsche 911 Turbo"
+      alt="Porsche 911" src="/imagenes/ef34c66f030457377d6446462cb02218.jpg"></p>
+    </ul>
+  </section>
+  <section>
+    <h2>Reglas Horizontales</h2>
+    <p>La etiqueta <strong>hr</strong> define una ruptura tematica den una pagina HTML y suele mostrarse como una linea horizontal</p>
+    <p>Se utiliza para separar contenido o definir un cambio </p>
+    <hr>
+  </section>
+  <section>
+    <h2>Saltos de Linea</h2>
+    <p>El elemento <strong>br</strong> define un salto de linea<br>Uselo si desea un salto de linea sin<br> comenzar un nuevo parrafo</p>
+  </section>
+  <section>
+    <h2>Elemento Pre</h2>
+    <p>El elemento <strong>pre</strong> define texto preformateado<br>El texto dentro dentro de una pre se muestra<br>en una fuente que conserva tanto los espacios <br>como los saltos de linea.</p>
+    <pre>
+      Hola Mundo
+
+      Hola Mundo 
+
+      Hola Mundo 
+    
+      Hola Mundo
+    </pre>
+  </section>
+  <section>
+    <h2>Elemento b</h2>
+    <p><b>Define texto en negritas </b> </p>
+  </section>
+  <section>
+    <h2> Elemeto i y em</h2>
+    <p>Elemento <b>i</b> define una parte del texto en un estado<br>alternativo. El contenido se muestra en cursiva.</p>
+    <ul>
+      <i>Hola Mundo</i><br><i>Hola Mundo</i><br><i>Hola Mundo</i><br><i>Hola Mundo</i><br><i>Hola Mundo</i>   
+    </ul>
+    <p>El elemento <b>em</b> define el texto enfatizado</p>
+    <ul>
+      <em>Hola Mundo</em>
+    </ul>
+  </section>
+  <section>
+    <h2>Elemento small</h2>
+    <p><small>Define texto mas pequeño</small></p>
+    <h2>Elemento marca</h2>
+    <p>Define el texto que debe marcarse o resaltar</p>
+    <ul>
+     <mark>Hola Mundo</mark>
+    </ul>
+  </section>
+  <section>
+    <h2>Elemento sub</h2>
+    <p>El texto aparece medio caracter debajo de la<br> linea normal y se presenta en un caracter mas<br>pequeño.</p>
+    <ul>
+     <p>H<sub>2</sub>O</p>
+    </ul>
+  </section>
+  <section>
+    <h2>Elemento sup</h2>
+   <p>El texto aparece medio caracter por encima de<br>la linea normal.</p>
+   <ul>
+     <p>2<sup>2</sup></p>
+   </ul> 
+  </section>
+  <section>
+   <h2>Blockquote para citas</h2>
+   <p>Este elemento define una seccion que se cita de<br>otra fuente o pagina web.</p>
+   <blockquote cite="https://www.culturagenial.com/es/poemas-cortos-y-bonitos-para-dedicar/">
+    <pre>
+     El Amor - es anterior a la Vida 
+     posterior - a la Muerte 
+     inicial de la Creación, y
+     de la tierra el Exponente 
+    </pre>
+   </blockquote>
+  </section>
+  <section>
+   <h2>Elemento q</h2>
+   <p>Losnavegadores normalmente insertan comillas<br>alrededor de la cita.</p>
+   <ul>
+     <q>Hola Mundo</q>
+   </ul>
+  </section>
+  <section>
+   <h2>Etiqueta address</h2>
+   <p>La etiqueta <b>address</b> define la informacion de contacto<br>del autor de un documentoo articulo.</p>
+   <ul>
+    <address>
+      Creado por Esau Garcia Sedeño<br>Noviembre de 2023<br>Mexico,Ciudad De México<br>sedenoesau@gmail.com<br>IG-esauseed
+    </address>
+   </ul>
+  </section>
+  <section>
+   <h2>Etiqueta cite</h2>
+   <p>Deine el titulo de una obra creativa, el texto<br>del <b>cite</b>normalmente se muestra en cursiva.</p>
+   <ul>
+     <cite>Hola Mundo</cite>
+   </ul>
+  </section>
+  <section>
+   <h2>Etiqueta bdo</h2>
+   <p>Cambia de direccion el texto</p>
+   <ul>
+     <bdo dir="rtl">Hola Mundo</bdo><br>
+     <bdo dir="ltr">Hola Mundo</bdo>
+   </ul>
+  </section>
+  <section>
+   <h2>Etiqueta de comentario</h2>
+   <p>Ayuda a  docuementar su codigo, esta etiqueta<br>no es visible para el publico.</p>
+  </section>
+  <!--Aqui esta agregado un comentario-->
+  <section>
+   <h2>Estilos HTML</h2>
+   <H3>Color de Fondo</H3>
+   <ul>
+     <p>style="background-color"</p><p style="background-color: blueviolet;">Hola Mundo</p>
+   </ul>
+   <h3>Color de Texto</h3>
+   <ul>
+     <p>style="color"</p><p style="color: blueviolet;">Hola Mundo</p>
+   </ul>
+  <section>
+   <h3>Color de Borde</h3>
+   <ul>
+     <p>style="border:Xpx solid color"</p><p style="border:4px solid rebeccapurple;">Hola Mundo</p>
+   </ul>
+  </section>
+  </section>
+  <section>
+   <h2>Etiqueta ol</h2>
+   <p>Permite definir listas o viñetas ordenadas, bien<br>con numeracion o alfabeticamente.</p>
+   <ol>
+     <li value="4">Hola Mundo</li>
+     <li>Hola Mundo</li>
+    </ol>
+    <ol type="a">
+     <li>Hola Mundo</li>
+     <li>Hola Mundo</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Etiqueta aside</h2>
+    <p>Representa una seccion de una pagina que consite<br>en contenido que esta indirectamente relacionada<br>con el contenido principal.<br>Algo que esta anexo al contenido</p>
+  </section>
+  <section>
+    <h2>Etiqueta header</h2>
+    <p>Representa un grupo de ayudas introductorias o de navegacion.<br>Puede contener algunos elementos de encabezados<br>asi como tambien un logo, un formulario de busqueda<br>un nombre de autor y otros componentes.</p>
+  </section>
+  <section>
+    <h2>Etiqueta Section</h2>
+    <p>Define y ayuda para separar secciones en un documento</p>
+  </section>
+  <section>
+    <h2>Etiqueta Footer</h2>
+    <p>Contiene informacion general del autor o<br>empresa, enlaces a documentos o el famoso copyright.</p>
+  </section>
+  <section>
+    <h2>Etiqueta main</h2>
+    <p>Especifica el contenido principal de el  documento.<br>Solo puede contener un main en toda la pagina.<br>Va dentro de la etiqueta body.</p>
+  </section>
+  <section>
+    <h2>Etiqueta span</h2>
+    <p>Funciona para agrupar elementos y darles estilo.</p>
+  </section>
+  <section>
+    <h2>Metadatos HTML</h2>
+    <ol>
+      <li><h3>Metadato Title</h3></li>
+      <p>Define el titulo de la página que se muestra<br> en la barra del titulo del navegador.
+      <p style="color: rgb(255, 0, 0);">Se utiliza para los motores de busqueda</p>
+      <li><h3>Metadato Charset utf-8</h3></li>
+      <p>Especifica la codificacion de caracteres<br>utilizados en la pagina.</p>
+      <li><h3>Metadato Description</h3></li>
+      <p>Proporciona una descripcion concisa<br>de la pagina que puede ser utilzada por<br>los motores de busqueda.</p>
+      <li><h3>Metadato Keywords</h3></li>
+      <p>Especifica palabras clave relevantes para la página</p>
+      <li><h3>Metadato viewport</h3></li>
+      <p>Ajusta el ancho de la página del ancho del dispositivo<br>y establece la escala inicial.</p>
+
+      
+    </ol>
+  </section>
+  <section>
+   <h2>Favicon</h2>
+   <p>Un favicon es el icono pequeño que aparece en la pestaña del navegador</p>
+  </section>
+  <section>
+    <h2>Formulario de contactos</h2>
+    <form method="post" action="/">
+      <fieldset>
+        <legend>Informacion de contacto</legend>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"
+        placeholder="Francico Esau Garcia Sedeño" required>
+      <div>
+        <label>Telefono:
+          <input type="tel" name="name"
+          placeholder="" required>
+        </label>
+      </div> <!--Aca nos damos cuenta para que sirve la etiqueta div, separa dos acciones label e input-->
+        
+      </fieldset>
+      
+      
+<!--Tenemos dos formas de realizar el imput, una con la etiqueta id=""(en input) y for=""(en label)
+y la otra forma es englobar el input dentro del laber-->
+    </form>
+    <form>
+      <fieldset>
+        <legend>Comentarios </legend>
+        <label>Comentario:
+          <input type="text" name="name"
+          placeholder="">
+        </label>
+      <div>
+        <label>Email:
+          <input type="email" name="name"
+          placeholder="" required>
+        </label>
+      </div> 
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>Random</legend>
+        <div>
+          <datalist id="juegos">
+              <option value="Minecraft"></option>
+              <option value="Fornite"></option>
+              <option value="GTA V"></option>
+              <option value="Roblox"></option>
+          </datalist>
+          <label>
+            ¿Cual es tu videojuego favorito?<br>
+            <input list="juegos" name="juegos">
+          </label>
+        <div>
+          <div>
+            <datalist id="carrera">
+                <option value="Medicina"></option>
+                <option value="Programacion"></option>
+                <option value="Veterinaria"></option>
+                <option value="Arquitectura"></option>
+            </datalist>
+            <label>
+              ¿Que estudias?<br>
+              <input list="carrera" name="carrera">
+            </label>
+          </div>
+          </fieldset>
+          <input type="submit" value="Enviar">
+        </div>
+        </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+       
+
+      </fieldset>
+    </form>
+
+
+  </section>
+  <section>
+    <h3>Preguntas Frecuentes</h3>
+    <details>
+      <summary>¿Cual es tu video juego favorito?</summary>
+      <p>Mi video juego favorito es Minecraft, lo llevo jugando mas de 8 años </p>
+    </details>
+    <details>
+      <summary>¿Cual es tu pais favorito?</summary>
+      <p>Mi pais favorito e Mexico </p>
+    </details>
+    <details>
+      <summary>¿Tu mayor sueño?</summary>
+      <p>Mi mayor sueño es algun dia regresarle x10000<br>lo que mis papas me dieron, sacarlos de trabajar,<br> que no tengan preocupaciones de ningun tipo,<br> ayudar a mis hermanos a que cumplan sus sueños y yo cumplir<br> los mios que es comprarme un Hellcat, un mazda 3 y un charger asi<br>como una casa en Santa fé </p>
+    </details>
+  <video 
+   loading="lazy"
+   autoplay 
+   loop 
+   muted 
+   src="/imagenes/Performance Art _ Dodge Challenger.mp4"
+   height="150">
+  </video>
+
+  
+ 
+ 
+
+  
+
+
+
+ </main>
+ <footer>
+  Copyright: Francico Esau Garcia Sedeño
+ </footer>
+ </body>
+ 
+</html>
